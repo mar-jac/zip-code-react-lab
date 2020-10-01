@@ -1,31 +1,18 @@
+  
 import React, { Component } from 'react';
 import './App.css';
-
-
-function City(props) {
-  return (<div>This is the City component</div>);
-}
-
-function ZipSearchField(props) {
-  return (<div>This is the ZipSearchField component</div>);
-}
-
+import ZipSearch from './components/zipSearch';
+import CitySearch from './components/citySearch';
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <div className="App-header">
-          <h2>Zip Code Search</h2>
-        </div>
-        <ZipSearchField />
-        <div>
-          <City />
-          <City />
-        </div>
-      </div>
-    );
-  }
+	render() {
+		return (
+			<div className = "App-header">
+				<ZipSearch />
+				<CitySearch />
+			</div>
+		);
+	}
 }
 
-export default App;
+export default App;	

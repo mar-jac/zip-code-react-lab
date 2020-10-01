@@ -1,6 +1,70 @@
 .App-header {
-  background-color: #222;
-  padding: 20px;
-  color: white;
+  background-color: #000000;
+  min-height: 100vh;
+  display: flex;
   text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+  color: white;
+}
+
+
+.content {
+  background-color: #EBEFF2;
+  color: black;
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 5px 5px 0 0;
+  text-align: center;
+}
+
+.search input {
+  background-color: inherit;
+  border: none;
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+
+.search input:focus {
+  outline: none;
+}
+
+ul {
+  display: inline-flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+li {
+  display: inline-block;
+  padding: 7px;
+}
+
+.zipcode_input {
+  /* line up zipcode input box with the heading above it */
+  margin-left: 30px;
+  text-align: center;
+}
+
+.locationInfo h1 {
+  margin-left: 25px;
+  padding-top: 20px;
+}
+
+.locationInfo ul {
+  border: solid white 1px;
+  width: 50%;
+  padding: 15px;
+  margin-left: 20px;
+}
+
+.locationInfo ul li {
+  list-style-type: none;
+}
+
+.locationInfo_container{
+  align-items: center;
 }
